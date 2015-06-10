@@ -16,11 +16,11 @@ More details on the methods used in these scripts can be found in the following 
 
 ## Authors
 
-D. Dutykh, D. Clamond & A. Duran
+[D. Dutykh](http://www.denys-dutykh.com/), [D. Clamond](http://math.unice.fr/~didierc/) & [A. Duran](https://www.researchgate.net/profile/Angel_Duran3/)
 
-* [www.denys-dutykh.com](http://www.denys-dutykh.com/)
-* [math.unice.fr/~didierc/](http://math.unice.fr/~didierc/)
-* [https://www.researchgate.net/profile/Angel_Duran3](https://www.researchgate.net/profile/Angel_Duran3)
+* [http://www.denys-dutykh.com](http://www.denys-dutykh.com/)
+* [http://math.unice.fr/~didierc/](http://math.unice.fr/~didierc/)
+* [https://www.researchgate.net/profile/Angel_Duran3](https://www.researchgate.net/profile/Angel_Duran3/)
 
 ## Licence
 
