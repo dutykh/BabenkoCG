@@ -2,13 +2,15 @@
 
 # BabenkoCG
 
-Matlab code to solve the capillary-gravity Babenko equation for generalized solitary waves
+This function computes the steady irrotational surface solitary (classical and generalized) capillary-gravity wave solutions of the full Euler equations (homogeneous, incompressible and perfect fluids). The wave is defined by its initial Froude and Bond numbers (Fr, Bo) and the result is about twelve digits accurate. The method works for all but the highest waves.
+
+**NOTA BENE**: The execution of this function requires the presence of the Optimization Toolbox, namely we use the fsolve() function of this toolbox to solve the nonlinear nonlocal Babenko equation.
 
 ## References:
 
 More details on the methods used in these scripts can be found in the following references:
 
-* D. Clamond, D. Dutykh & A. Duran. *[Fast accurate computation of the fully nonlinear solitary surface gravity waves](https://hal.archives-ouvertes.fr/hal-01081798/)*. Submitted, 2015
+* D. Clamond, D. Dutykh & A. Duran. *[A plethora of generalised solitary gravity-capillary water waves](https://hal.archives-ouvertes.fr/hal-01081798/)*. Submitted, 2015
 
 ======
 
