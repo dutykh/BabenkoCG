@@ -1,8 +1,9 @@
 function [zs, ws, fs, SWP, W, F, P, A] = SolitaryCapillaryGravityWave (Fr, Bo, eta0, Z, PF)
 % SolitaryCapillaryGravityWave: This function computes 
 % the steady irrotational surface solitary (classical 
-% and generalized) capillary-gravity wave solutions of 
-% the full Euler equations (homogeneous, incompressible 
+% and generalized, depending on the Bond number <> 1/3) 
+% capillary-gravity wave solutions of the full Euler 
+% equations with free surface (homogeneous, incompressible 
 % and perfect fluids). The wave is defined by its initial 
 % Froude and Bond numbers (Fr, Bo) and the result is about 
 % twelve digits accurate. The method works for all but the 
@@ -67,8 +68,8 @@ function [zs, ws, fs, SWP, W, F, P, A] = SolitaryCapillaryGravityWave (Fr, Bo, e
 % If the method does not converge for some reasonable values 
 % Fr, Bo parameters, there are several possible solutions:
 %		1. Change the initial guess
-%       2. Change the length of the domain
-% 		3. Employ the natural continuation in one of the
+%   2. Change the length of the domain
+% 	3. Employ the natural continuation in one of the
 %		parameters from a fully converged solution
 % The numerical computation of capillary-gravity waves is often
 % a tricky matter and some numerical experience is needed to obtain 
@@ -89,7 +90,7 @@ function [zs, ws, fs, SWP, W, F, P, A] = SolitaryCapillaryGravityWave (Fr, Bo, e
 % 
 % REFERENCE: D. Clamond, D. Dutykh & A. Duran. A plethora 
 % of generalised solitary gravity-capillary water waves.
-% Submitted, 2015
+% J. Fluid Mech., 2015
 % 	  https://hal.archives-ouvertes.fr/hal-01081798/
 
 if (nargin < 4)
@@ -146,7 +147,7 @@ C   = k.*coth(k*d); C(1) = 1/d;     % nonlocal C-operator in the Babenko equatio
 Ci  = tanh(k*d)./(k*d); Ci(1) = 1;  % inverse C operator
 Cnl = -1i*coth(k*d); Cnl(1) = 0;	% nonlocal int-C-operator
 
-%%% The linear operator in Babenko equation:
+%%% The linear operator in capillary-gravity Babenko equation:
 L = c2 - Ci - sig*k.*tanh(k*d);
 
 %%% Finally, we run the nonlinear solver:
